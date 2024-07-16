@@ -1,0 +1,133 @@
+/*resets browser defaults*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*responsive images*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*sets rem size*/
+html {
+    font-size: 10px;
+    background: black;
+}
+
+/* body {
+    background-image: url('homepage_bg.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+
+header {
+    display: inline-flex;
+    align-items: center;
+}
+
+.bg-img {
+    z-index: -1;
+    opacity: .5;
+}
+
+#logotitle {
+    font-weight: regular;
+    color: white;
+    float: left;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.navlink {
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navlink::selection {
+    color: royalblue;
+}
+
+.logsig {
+    background: black;
+    border: .1rem solid royalblue;
+    margin: 1rem;
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+.logsign {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    color: white;
+}
+
+.blushrk {
+    background: linear-gradient(to right, #1E90FF, #9CFF1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tradebnr {
+    width: 50%;
+    margin: 5rem;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.trade-title {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.trade-text {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.register {
+   background: royalblue;
+   border-radius: 5rem;
+   padding: 1.5rem;
+}
+
+.register-link {
+    color: #fff;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.journey {
+    text-align: center;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+
+.focals {
+    display:  inline-flex;
+    align-items: center;
+    padding: 2rem;
+    margin: 5rem;
+    background: darkgray;
+    width: 40%;
+}
+
+h3 {
+    margin: 1rem;
+}
