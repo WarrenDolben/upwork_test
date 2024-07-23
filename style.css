@@ -17,15 +17,17 @@ html {
     background: black;
 }
 
-/* body {
-    background-image: url('homepage_bg.jpeg');
-    background-size: cover;
-    background-blend-mode: darken;
-} */
+.logo {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1rem;
+}
 
 header {
     display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .bg-img {
@@ -39,27 +41,54 @@ header {
     float: left;
     padding: 2rem;
     font-size: 2rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
 }
 
 .navlink {
     color: white;
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.navlink:hover {
+    color: royalblue;
 }
 
 .navlink::selection {
     color: royalblue;
 }
 
-.logsig {
+.login {
     background: black;
     border: .1rem solid royalblue;
-    margin: 1rem;
+    margin: .5rem;
     border-radius: 5%;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
+.signup {
+    background: royalblue;
+    border: .1rem solid royalblue;
+    margin: .5rem;
+    border-radius: 5%;
+    padding: 1rem 2rem;
+}
+
+.login:hover, .signup:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 .logsign {
     color: white;
     text-decoration: none;
@@ -98,13 +127,18 @@ section {
 .trade-text {
     font-size: 1.5rem;
     margin: auto;
-    padding: 2rem;
+    padding: 7rem;
 }
 
 .register {
    background: royalblue;
    border-radius: 5rem;
    padding: 1.5rem;
+}
+
+.register:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .register-link {
@@ -121,13 +155,30 @@ section {
 
 .focals {
     display:  inline-flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     padding: 2rem;
-    margin: 5rem;
-    background: darkgray;
-    width: 40%;
+    margin: 3rem;
+    background: #1D1D1D;
+    width: 45%;
+    border-radius: 1rem;
 }
 
 h3 {
-    margin: 1rem;
+    font-size: 125%;
+    padding: .3rem;
+}
+
+p {
+    padding: .3rem;
+}
+
+@media screen and (max-width: 60rem) {
+    .trade-text {
+        padding: 5rem;
+    }
+
+    .focals {
+        width: 40%;
+    }
 }
