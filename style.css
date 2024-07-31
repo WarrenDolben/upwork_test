@@ -7,8 +7,13 @@
 
 /*responsive images*/
 img {
+    display: block;
     width: 100%;
     height: auto;
+}
+
+.img-container {
+    position: relative;
 }
 
 /*sets rem size*/
@@ -164,21 +169,79 @@ section {
     border-radius: 1rem;
 }
 
-h3 {
-    font-size: 125%;
-    padding: .3rem;
+.pointhead {
+    font-size: 200%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-p {
+.pointinfos {
     padding: .3rem;
+    font-size: 150%;
 }
+
+.lpbanner {
+    margin-top: 20rem;
+    height: 10rem;
+    width: 100%;
+    opacity: .8;
+    z-index: -1;
+    position: relative;
+}
+
+#lpbflex {
+    width: 100%;
+    display: inline-flex;
+    justify-content: right;
+    align-items: right;
+    position: absolute;
+    top: 60%;
+    right: -60rem;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+
+.lpbdetail {
+    color: #fff;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.lpbitem {
+    width: 33%;
+    text-align: center;
+}
+
+.lpbfocus {
+    border-right: .1rem solid #fff;
+    border-left: .1rem solid #fff;
+}
+
 
 @media screen and (max-width: 60rem) {
+    
+    .tradebnr {
+        top: 30%;
+    }
+
+    .trade-title {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
     .trade-text {
-        padding: 5rem;
+        font-size: 1rem;
+        padding: 3rem;
     }
 
     .focals {
-        width: 40%;
+        right: 0;
+        margin: 1rem;
+        padding: .5rem;
+    }
+
+    #lpbflex {
+        right: -25rem;
+        font-size: 1.5rem;
     }
 }
