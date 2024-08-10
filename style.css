@@ -79,6 +79,7 @@ nav {
     margin: .5rem;
     border-radius: 5%;
     padding: 1rem 2rem;
+    width: 100%;
 }
 
 .signup {
@@ -87,6 +88,7 @@ nav {
     margin: .5rem;
     border-radius: 5%;
     padding: 1rem 2rem;
+    width: 100%;
 }
 
 .login:hover, .signup:hover {
@@ -138,6 +140,8 @@ section {
    background: royalblue;
    border-radius: 5rem;
    padding: 1.5rem;
+   color: #fff;
+   margin: 2rem 0 2rem 0;
 }
 
 .register:hover {
@@ -226,15 +230,33 @@ section {
     background: #151515;
     width: 60%;
     border: .1rem solid rgb(123, 123, 123);
-    border-radius: 25px;
+    border-radius: 2.5rem;
     display: inline-flex;
     margin-left: 30%;
+    margin-bottom: 5rem;
+}
+
+.course-container2 {
+    background: #151515;
+    width: 60%;
+    border: .1rem solid rgb(123, 123, 123);
+    border-radius: 2.5rem;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-bottom: 5rem;
 }
 
 .course-hdr {
     font-size: 2.75rem;
     padding: 1rem;
     margin-right: 17.5rem;
+    width: 100%;
+}
+
+.course-hdr2 {
+    font-size: 2.75rem;
+    padding: 1rem;
+    margin-left: 5rem;
     width: 100%;
 }
 
@@ -245,12 +267,27 @@ section {
     line-height: 200%;
 }
 
+.course-text2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 150%;
+    line-height: 200%;
+    margin-left: 5rem;
+}
+
 .course-img {
     width: 50rem;
     margin-top: 5rem;
     margin-left: -10rem;
     margin-right: 5rem;
-    border-radius: 25px;
+    border-radius: 2.5rem;
+}
+
+.course-img2 {
+    width: 50rem;
+    margin-top: 5rem;
+    margin-right: -10rem;
+    border-radius: 2.5rem;
 }
 
 .course-section {
@@ -259,6 +296,14 @@ section {
 }
 
 @media screen and (max-width: 60rem) {
+
+    nav {
+        margin-left: -2.5rem;
+    }
+
+    .logsign-block {
+        margin-left: -1rem;
+    }
 
     .navlink {
         font-size: 1.35rem;
@@ -288,4 +333,37 @@ section {
         right: -25rem;
         font-size: 1.5rem;
     }
+
+    .course-img {
+        width: 20rem;
+        margin-top: 10rem;
+        margin-left: 0;
+    }
+
+    .course-img2 {
+        width: 20rem;
+        margin-top: 10rem;
+        margin-left: 4.5rem;
+    }
+
+    .course-section {
+        margin-left: -5rem;
+        margin-right: 0;
+        width: 60%;
+    }
+
+    .course-container {
+        margin-left: 2rem;
+        width: 95%;
+    }
+
+    .course-container2 {
+        width: 95%;
+        margin-left: 2rem;
+    }
+
+    .course-text2 {
+        width: 90%;
+    }
+
 }
