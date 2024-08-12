@@ -100,6 +100,10 @@ nav {
     text-decoration: none;
 }
 
+.logsign-block {
+    display: inline-flex;
+}
+
 section {
     color: white;
 }
@@ -195,8 +199,8 @@ section {
 #lpbflex {
     width: 100%;
     display: inline-flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: space-evenly;
+    align-items: center;
     position: absolute;
     top: 25rem;
     right: -60rem;
@@ -206,24 +210,25 @@ section {
 
 .lpbdetail {
     color: #fff;
-    width: 100%;
+    width: 30%;
     font-size: 2rem;
-}
-
-.lpbitem {
-    width: 33%;
     text-align: center;
+    margin: auto;
 }
 
 .lpbfocus {
     border-right: .1rem solid #fff;
     border-left: .1rem solid #fff;
+    padding: 1rem;
+    text-align: center;
 }
 
 .course {
     text-align: center;
     font-size: 3rem;
     margin: 10rem auto 5rem auto;
+    letter-spacing: .3rem;
+    font-weight: bold;
 }
 
 .course-container {
@@ -295,13 +300,42 @@ section {
     margin-right: 20rem;
 }
 
-@media screen and (max-width: 60rem) {
+.course-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80rem;
+}
+
+.fa-circle-check {
+    color: lightgreen;
+}
+
+.content-div {
+    background: #1D1D1D;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 47.5%;
+    border-radius: 2.5rem;
+}
+
+.content-p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 77rem) {
 
     nav {
         margin-left: -2.5rem;
     }
 
+    .login, .signup {
+        width: 80%;
+    }
+
     .logsign-block {
+        display: block;
         margin-left: -1rem;
     }
 
@@ -330,7 +364,7 @@ section {
     }
 
     #lpbflex {
-        right: -25rem;
+        right: -37.5rem;
         font-size: 1.5rem;
     }
 
@@ -366,4 +400,42 @@ section {
         width: 90%;
     }
 
+    .content-div {
+        width: 45%;
+        margin: .5rem .5rem .5rem 1rem;
+        padding: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 48rem) {
+    
+    .tradebnr {
+        top: 60%;
+    }
+
+    .login, .signup {
+        width: 80%;
+        padding: 0.25rem;
+        font-size: 1.25rem;
+    }
+
+    #lpbflex {
+        width: 56rem;
+        right: -32.75rem;
+    }
+
+    .lpbitem {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lpbdetail {
+        font-size: 1.5rem;
+    }
+
+    .course-section {
+        width: 50%;
+    }
 }
