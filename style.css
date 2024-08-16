@@ -52,17 +52,17 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: auto;
+    margin-right: 25rem;
 }
 
 .navlink {
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
     width: 100%;
-    overflow: hidden;
-    height: 5rem;
+    height: 4rem;
+    font-weight: normal;
 }
 
 .navlink:hover {
@@ -102,6 +102,7 @@ nav {
 
 .logsign-block {
     display: inline-flex;
+    margin-right: 5rem;
 }
 
 section {
@@ -143,7 +144,9 @@ section {
 .register {
    background: royalblue;
    border-radius: 5rem;
-   padding: 1.5rem;
+   border: none;
+   border-bottom: .3rem solid #1D1D1D;
+   padding: 1rem 2rem;
    color: #fff;
    margin: 2rem 0 2rem 0;
 }
@@ -189,7 +192,7 @@ section {
 
 .lpbanner {
     margin-top: 20rem;
-    height: 10rem;
+    height: 15rem;
     width: 100%;
     opacity: .8;
     z-index: -1;
@@ -202,7 +205,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    top: 25rem;
+    top: 27.5rem;
     right: -60rem;
     margin: auto;
     transform: translate(-50%, -50%);
@@ -324,27 +327,87 @@ section {
     font-size: 1.5rem;
 }
 
+.premium {
+    background: #1D1D1D;
+    width: 40%;
+    border-top: .1rem solid royalblue;
+    border-right: .1rem solid royalblue;
+    border-bottom: .1rem solid rgb(123, 123, 123);
+    border-left: .1rem solid rgb(123, 123, 123);
+    border-radius: 2.5rem;
+    margin: 1rem;
+    margin-left: 8.5%;
+    padding: 2rem;
+}
+
+.freemium {
+    background: #1D1D1D;
+    width: 40%;
+    border-radius: 2.5rem;
+    margin: 1rem;
+    padding: 2rem;
+    height: 80%;
+}
+
+.plan-container {
+    display: inline-flex;
+    width: 100%;
+}
+
+.plan-hdr {
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.plan-cost {
+    margin: 1rem;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.start {
+    background: royalblue;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.start-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.start:hover, .start-link:hover {
+    opacity: .8;
+}
+.plan-details {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
 @media screen and (max-width: 77rem) {
 
-    nav {
-        margin-left: -2.5rem;
-    }
-
-    .login, .signup {
-        width: 80%;
-    }
-
     .logsign-block {
-        display: block;
-        margin-left: -1rem;
+        margin-left: 0;
+    }
+
+    nav {
+        display: inline-flex;
+        margin-right: 15rem;
     }
 
     .navlink {
+        width: 100%;
+        margin: 0;
         font-size: 1.35rem;
+        /*keep link text on same line*/
+        white-space: nowrap;
     }
     
     .tradebnr {
-        top: 30%;
+        top: 20%;
     }
 
     .trade-title {
@@ -410,8 +473,21 @@ section {
 
 @media screen and (max-width: 48rem) {
     
+    #logotitle {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .login, .signup {
+        margin: 0;
+    }
+
     .tradebnr {
-        top: 60%;
+        top: 50%;
     }
 
     .login, .signup {
@@ -435,7 +511,18 @@ section {
         font-size: 1.5rem;
     }
 
+    .course-container, .course-container2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
     .course-section {
         width: 50%;
     }
+
+    .premium, .freemium {
+        width: 50%;
+        margin: 0;
+    }
+
 }
