@@ -23,8 +23,8 @@ html {
 
 .logo {
     margin-left: 1rem;
-    color: white;
-    font-size: 1rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
     color: white;
     float: left;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     width: 100%;
 }
 
@@ -206,15 +206,20 @@ section {
     align-items: center;
     position: absolute;
     top: 27.5rem;
-    right: -60rem;
+    right: -64rem;
     margin: auto;
     transform: translate(-50%, -50%);
 }
 
+.lpbhdr {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .lpbdetail {
     color: #fff;
-    width: 30%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: auto;
 }
@@ -387,6 +392,43 @@ section {
     font-size: 1.25rem;
 }
 
+.banner-container {
+    position: relative;
+}
+
+.bannerflex {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 27.5rem;
+    right: -65rem;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bannerhdr, .bannerdetail {
+    color: white;
+}
+
+.bannerhdr {
+    font-size: 2.5rem;
+}
+
+.bannerdetail {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bannerfocus {
+    border-right: .1rem solid #fff;
+    border-left: .1rem solid #fff;
+    padding: 5rem;
+}
+
+
+
 @media screen and (max-width: 77rem) {
 
     .logsign-block {
@@ -427,7 +469,7 @@ section {
     }
 
     #lpbflex {
-        right: -37.5rem;
+        right: -44rem;
         font-size: 1.5rem;
     }
 
@@ -469,12 +511,21 @@ section {
         padding: .5rem;
     }
 
+    .bannerflex {
+        right: -44rem;
+    }
 }
 
 @media screen and (max-width: 48rem) {
     
+    .logo {
+        height: 3rem;
+        width: 3rem;
+        margin-left: .5rem;
+    }
+    
     #logotitle {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     nav {
@@ -497,8 +548,8 @@ section {
     }
 
     #lpbflex {
-        width: 56rem;
-        right: -32.75rem;
+        width: 50rem;
+        margin-right: 17.5rem;
     }
 
     .lpbitem {
@@ -507,8 +558,12 @@ section {
         margin: 0;
     }
 
+    .lpbhdr {
+        font-size: 1.75rem;
+    }
+
     .lpbdetail {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .course-container, .course-container2 {
@@ -525,4 +580,18 @@ section {
         margin: 0;
     }
 
+    .bannerflex {
+        right: -15rem;
+        padding: 0;
+        width: 80%;
+    }
+
+    .bannerhdr {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .bannerdetail {
+        font-size: 1.25rem;
+    }
 }
