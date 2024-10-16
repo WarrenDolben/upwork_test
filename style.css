@@ -63,6 +63,7 @@ nav {
     width: 100%;
     height: 4rem;
     font-weight: normal;
+    /*keep link text on same line*/
     white-space: nowrap;
 }
 
@@ -398,7 +399,7 @@ section {
     position: relative;
 }
 
-.bannerflex {
+#bannerflex {
     width: 100%;
     display: inline-flex;
     justify-content: space-evenly;
@@ -406,7 +407,7 @@ section {
     position: absolute;
     top: 27.5rem;
     right: -100rem;
-    margin: 0;
+    margin: auto;
     transform: translate(-50%, -50%);
 }
 
@@ -433,8 +434,22 @@ section {
 
 @media screen and (max-width: 77rem) {
 
+    header {
+        width: 100%;
+    }
+    
+    #logotitle {
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+
+    .navlink {
+        padding: 5rem;
+    }
+
     .logsign-block {
-        margin-left: 0;
+        margin-left: 4rem;
+        margin-right: 3rem;
     }
 
     nav {
@@ -446,8 +461,6 @@ section {
         width: 100%;
         margin: 0;
         font-size: 1.35rem;
-        /*keep link text on same line*/
-        white-space: nowrap;
     }
 
     .trade-title {
@@ -465,7 +478,7 @@ section {
     }
 
     #lpbflex {
-        right: -44rem;
+        right: -37.5rem;
         font-size: 1.5rem;
     }
 
@@ -507,8 +520,9 @@ section {
         padding: .5rem;
     }
 
-    .bannerflex {
-        right: -44rem;
+    #bannerflex {
+        right: -37.5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -599,10 +613,9 @@ section {
         margin: 0;
     }
 
-    .bannerflex {
-        right: -12.5rem;
-        padding: 0;
-        width: 80%;
+    #bannerflex {
+        width: 45rem;
+        margin-right: 20rem;
     }
 
     .bannerhdr {
